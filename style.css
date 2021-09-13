@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #BFA4A4;
+    font-size: 130%;
+    line-height: 1.4;
+}
+h1 {
+    font-size: 250%;
+    font-weight: normal;
+    font-style: italic;
+}
+h2 {
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 1%;
+}
+header, address {
+    text-align: center;
+}
+header, main {
+    background-color: #d6a8aa;
+    max-width: 2000px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+header, #biography, #merits, address {
+    border-bottom: solid 3px #BFA4A4;
+    padding: 2% 4% 1% 4%;
+}
+#biography, #merits {
+    display: grid;
+    gap: 2%;
+}
+#biography {
+    grid-template-columns: 1fr 3fr;
+}
+#biography img {
+    border-radius: 50%;
+}
+#merits {
+    grid-template-columns: 1fr 1fr;
+}
+#merits li {
+    list-style: square;
+}
+.movie {
+    font-style: italic;
+}
+.winner, .nominee {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+}
+.winner {
+    color: hsl(40, 100%, 35%)
+}
+.nominee {
+    color: hsl(0, 0%, 50%);
+}
+address li {
+    list-style: none;
+}
+a {
+    color:rgb(172, 57, 114);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(207, 70, 97);
+}
+a:visited {
+    color: rgb(207, 70, 97);
+}
+
+@media (max-width: 1100px) {
+    header, main, address {
+        margin: 0;
+    }
+}
+@media (max-width: 860px) {
+    #biography, #merits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3%;
+    }
+    #movies {
+        padding-bottom: 1%;
+        border-bottom: solid 3px #BFA4A4;
+    }
+    #biography img {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+    }
+}
