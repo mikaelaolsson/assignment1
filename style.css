@@ -42,6 +42,9 @@ header, #biography, #merits, address {
 #biography img {
     border-radius: 50%;
 }
+#biography p {
+    padding-bottom: 3%;
+}
 #merits {
     grid-template-columns: 1fr 1fr;
 }
